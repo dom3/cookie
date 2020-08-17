@@ -11,7 +11,7 @@ client.on('message', message => {
     if (message.member.user.bot) return;
     
     if (message.content == "cookieupdate" || message.content == "Cookieupdate") {
-        client.user.setActivity('' + newCookies + ' cookies.', { type: 'WATCHING' });
+        client.user.setActivity('' + cookies + ' cookies.', { type: 'WATCHING' });
     }
 
     if (message.content == "cookie" || message.content == "Cookie") {
