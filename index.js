@@ -9,6 +9,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.member.user.bot) return;
+    
+    if (message.content == "cookieupdate" || message.content == "Cookieupdate") {
+        client.user.setActivity('' + newCookies + ' cookies.', { type: 'WATCHING' });
+    }
 
     if (message.content == "cookie" || message.content == "Cookie") {
         var newCookies = cookies + 1;
